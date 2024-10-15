@@ -1,0 +1,384 @@
+Ruleset:
+	java.security.Key
+	javax.crypto.SecretKeyFactory
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.ECParameterSpec
+	java.security.cert.CertificateFactory
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.SecureRandom
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.SecretKey
+	java.security.spec.DSAParameterSpec
+	javax.net.ssl.KeyStoreBuilderParameters
+	java.security.DigestOutputStream
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.crypto.spec.DHParameterSpec
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.Cipher
+	java.security.PublicKey
+	java.security.KeyPairGenerator
+	java.security.Signature
+	java.security.KeyFactory
+	javax.net.ssl.SSLContext
+	java.security.cert.TrustAnchor
+	javax.servlet.http.Cookie
+	java.security.cert.PKIXParameters
+	java.security.AlgorithmParameters
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	java.security.spec.X509EncodedKeySpec
+	java.net.PasswordAuthentication
+	javax.net.ssl.KeyManagerFactory
+	javax.crypto.CipherOutputStream
+	javax.crypto.spec.IvParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.KeyStore
+	java.security.cert.PKIXBuilderParameters
+	java.security.DigestInputStream
+	java.security.PrivateKey
+	javax.crypto.KeyAgreement
+	java.security.spec.MGF1ParameterSpec
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.spec.ECGenParameterSpec
+	javax.crypto.Mac
+	javax.crypto.spec.DHGenParameterSpec
+	java.security.KeyPair
+	javax.crypto.KeyGenerator
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.CipherInputStream
+	java.security.MessageDigest
+
+Analyzed Objects:
+	Object:
+		Variable: varReplacer10
+		Type: java.lang.String
+		Statement: r0 = getInstance(varReplacer10)
+		Line: 18
+		Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		SHA-256: e9ca63126e64ed0a5e4371dc39464acf9c5ca45c537b1b65c3b94358d164f118
+		Secure: true
+	Object:
+		Variable: r0
+		Type: java.security.KeyPairGenerator
+		Statement: r0 = getInstance(varReplacer15)
+		Line: 56
+		Method: <example.IncompleOperationErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: 60673392ba7ccf9ee141170e72ee257e8bb52122b8ba05596d3c0534e082f0e3
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: javax.crypto.SecretKey
+		Statement: $r1 = $r0.generateKey()
+		Line: 30
+		Method: <example.ImpreciseValueExtractionErrorExample: java.security.Key getKey()>
+		SHA-256: 8de0dd0980eb8653fbd9a4b5400b8fa2f58a5bc9950508934c6b4da86ec23318
+		Secure: true
+	Object:
+		Variable: r0
+		Type: java.security.Signature
+		Statement: r0 = getInstance(varReplacer13)
+		Line: 22
+		Method: <example.IncompleOperationErrorExample: void main(java.lang.String[])>
+		SHA-256: 58160d60ee7f1545b9179d1cbca247461b68202cfe4025009586cba011558a4a
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: r0.doFinal($r4)
+		Line: 26
+		Method: <example.ImpreciseValueExtractionErrorExample: void main(java.lang.String[])>
+		SHA-256: eeb9dd59e0cb108742a980ab95b83e2bccc1e81c0e2dacc909a979a9b2492ef0
+		Secure: true
+	Object:
+		Variable: varReplacer3
+		Type: java.lang.String
+		Statement: r0 = getInstance(varReplacer3)
+		Line: 28
+		Method: <example.TypestateErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: 710d65fde2f65f0c64f59615da91eaf7dc522ef366b2140228a2e80693c11949
+		Secure: true
+	Object:
+		Variable: r0
+		Type: java.security.KeyPairGenerator
+		Statement: r0 = getInstance(varReplacer3)
+		Line: 28
+		Method: <example.TypestateErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: 45869d4170f4cd17b8cc620bc010bcc571b6bc018468ab9260014843a6094da5
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.Signature
+		Statement: $r1 = getInstance(varReplacer14)
+		Line: 40
+		Method: <example.IncompleOperationErrorExample: void doInit()>
+		SHA-256: 98e2966f0dfb353c49714432826b2571b995da9b4a994996d159769f0673b09c
+		Secure: false
+	Object:
+		Variable: r1
+		Type: java.security.KeyPair
+		Statement: r1 = r0.generateKeyPair()
+		Line: 30
+		Method: <example.TypestateErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: afac22465e8b9fcdaa0c419e4983ab54f6fa5615882c090ac44d3ed2ad7a4f7
+		Secure: false
+	Object:
+		Variable: varReplacer6
+		Type: java.lang.String
+		Statement: $r0 = getInstance(varReplacer6)
+		Line: 30
+		Method: <example.ImpreciseValueExtractionErrorExample: java.security.Key getKey()>
+		SHA-256: f02229e965c9dbc9950954b3f689dbf989bcd39f0da7944eab5b002f9ba62a1
+		Secure: true
+	Object:
+		Variable: r0
+		Type: javax.crypto.Cipher
+		Statement: r0 = getInstance(r6)
+		Line: 24
+		Method: <example.ImpreciseValueExtractionErrorExample: void main(java.lang.String[])>
+		SHA-256: d965ad121886575b582d4c941f2507c7582b7ce35c87afa9b8279af322f6b90c
+		Secure: false
+	Object:
+		Variable: r2
+		Type: javax.crypto.Cipher
+		Statement: r2 = getInstance(varReplacer11)
+		Line: 23
+		Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		SHA-256: 968b03f11e37dc80df5f24ff08ad271e1fd4791e3a1f3994ce3abb6f85b29462
+		Secure: false
+	Object:
+		Variable: r1
+		Type: java.security.KeyPair
+		Statement: r1 = r0.generateKeyPair()
+		Line: 58
+		Method: <example.IncompleOperationErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: afac22465e8b9fcdaa0c419e4983ab54f6fa5615882c090ac44d3ed2ad7a4f7
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.PrivateKey
+		Statement: $r2 = r1.getPrivate()
+		Line: 31
+		Method: <example.TypestateErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: bd552de9ab9d663a12900cbbacb5ef836aa9d69067df68d47d75347c80499e2f
+		Secure: false
+	Object:
+		Variable: r0
+		Type: javax.crypto.KeyGenerator
+		Statement: r0 = getInstance(varReplacer10)
+		Line: 18
+		Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		SHA-256: a90dc8cd9cc65a087fa298a39c5e0b58c0113e4e454a31d83b3b03ba3cd984bb
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r2.update($r3)
+		Line: 45
+		Method: <example.IncompleOperationErrorExample: void doUpate()>
+		SHA-256: c087bfa745c22d8400fcba209ab10e66f93243f7f6068db1c0ca4f7c95ba2a76
+		Secure: true
+	Object:
+		Variable: $r0
+		Type: javax.crypto.KeyGenerator
+		Statement: $r0 = getInstance(varReplacer6)
+		Line: 30
+		Method: <example.ImpreciseValueExtractionErrorExample: java.security.Key getKey()>
+		SHA-256: 751c52c955a98c2e45290d3101ac5bd8f74a2cb45f41bc05ab7d606b03ac7220
+		Secure: true
+	Object:
+		Variable: $r2
+		Type: java.security.PrivateKey
+		Statement: $r2 = r1.getPrivate()
+		Line: 59
+		Method: <example.IncompleOperationErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: bd552de9ab9d663a12900cbbacb5ef836aa9d69067df68d47d75347c80499e2f
+		Secure: false
+	Object:
+		Variable: r0
+		Type: javax.crypto.Cipher
+		Statement: r0 = getInstance(varReplacer0)
+		Line: 15
+		Method: <example.ConstraintErrorExample: void main(java.lang.String[])>
+		SHA-256: eb6e3cd6139ae628dc4194a4ed2e17f80e3b73eb6e2174ce1907a605b62689f8
+		Secure: false
+	Object:
+		Variable: r0
+		Type: java.security.Signature
+		Statement: r0 = getInstance(varReplacer1)
+		Line: 17
+		Method: <example.TypestateErrorExample: void main(java.lang.String[])>
+		SHA-256: 23b9a0e2ce9ec75499b63138d6038ab18ecdc28afb87d0336502f18ab52618aa
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: r2.doFinal($r4)
+		Line: 27
+		Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		SHA-256: 5dac4a9b3a48dccb01a2ec025bb1173388dea63b888404288fc5138b78f6386a
+		Secure: true
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: r0.update($r4)
+		Line: 24
+		Method: <example.IncompleOperationErrorExample: void main(java.lang.String[])>
+		SHA-256: c5af4899889da08d79d0121b19d02b2112f5c151491693ea3edfe1c0d50bcc1d
+		Secure: true
+	Object:
+		Variable: r1
+		Type: javax.crypto.SecretKey
+		Statement: r1 = r0.generateKey()
+		Line: 22
+		Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		SHA-256: f0e8e25f3798c557e420fc07e366269cd78d49bdcd4e2888f78d62d457bedaf9
+		Secure: false
+	Object:
+		Variable: varReplacer15
+		Type: java.lang.String
+		Statement: r0 = getInstance(varReplacer15)
+		Line: 56
+		Method: <example.IncompleOperationErrorExample: java.security.PrivateKey getPrivateKey()>
+		SHA-256: 223a3775a29e011d14f92946eacbb7c6388d3a8b90e64d51539b717a5f77d697
+		Secure: true
+
+Findings in class example.IncompleOperationErrorExample
+
+	in Method: <example.IncompleOperationErrorExample: java.security.PrivateKey getPrivateKey()>
+		ConstraintError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter (with value 1024) should be any of {4096, 3072}
+			at statement: r0.initialize(varReplacer16)
+			at line: 57
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyPair
+			Return value was not properly generated as generatedKeypair
+			at statement: r1 = r0.generateKeyPair()
+			at line: 58
+
+		RequiredPredicateError violating CrySL rule for java.security.PrivateKey
+			Return value was not properly generated as generatedPrivkey
+			at statement: $r2 = r1.getPrivate()
+			at line: 59
+
+
+	in Method: <example.IncompleOperationErrorExample: void main(java.lang.String[])>
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPrivkey
+			at statement: r0.initSign($r1)
+			at line: 23
+
+		IncompleteOperationError violating CrySL rule for java.security.Signature
+			Operation on object of type java.security.Signature not completed. Expected call to one of the methods {sign(), sign(byte[], int, int)}
+			at statement: r0.update($r4)
+			at line: 24
+
+
+	in Method: <example.IncompleOperationErrorExample: void doInit()>
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPrivkey
+			at statement: $r2.initSign($r3)
+			at line: 41
+
+
+Findings in class example.TypestateErrorExample
+
+	in Method: <example.TypestateErrorExample: java.security.PrivateKey getPrivateKey()>
+		ConstraintError violating CrySL rule for java.security.KeyPairGenerator
+			First parameter (with value 1024) should be any of {4096, 3072}
+			at statement: r0.initialize(varReplacer2)
+			at line: 29
+
+		RequiredPredicateError violating CrySL rule for java.security.KeyPair
+			Return value was not properly generated as generatedKeypair
+			at statement: r1 = r0.generateKeyPair()
+			at line: 30
+
+		RequiredPredicateError violating CrySL rule for java.security.PrivateKey
+			Return value was not properly generated as generatedPrivkey
+			at statement: $r2 = r1.getPrivate()
+			at line: 31
+
+
+	in Method: <example.TypestateErrorExample: void main(java.lang.String[])>
+		RequiredPredicateError violating CrySL rule for java.security.Signature
+			First parameter was not properly generated as generatedPrivkey
+			at statement: r0.initSign($r1)
+			at line: 18
+
+		TypestateError violating CrySL rule for java.security.Signature
+			Unexpected call to method <java.security.Signature: byte[] sign()> on object of type java.security.Signature. Expected a call to one of the following methods {update(byte), update(byte[], int, int), initSign(java.security.PrivateKey), initSign(java.security.PrivateKey, AnyType), update(java.nio.ByteBuffer), update(byte[])}
+			at statement: r0.sign()
+			at line: 24
+
+
+Findings in class example.ImpreciseValueExtractionErrorExample
+
+	in Method: <example.ImpreciseValueExtractionErrorExample: void main(java.lang.String[])>
+		ImpreciseValueExtractionError violating CrySL rule for javax.crypto.Cipher
+			Constraint VC:java.lang.String transformation.split(/)[0] - AES,PBEWithHmacSHA224AndAES_128,PBEWithHmacSHA256AndAES_128,PBEWithHmacSHA384AndAES_128,PBEWithHmacSHA512AndAES_128,PBEWithHmacSHA224AndAES_256,PBEWithHmacSHA256AndAES_256,PBEWithHmacSHA384AndAES_256,PBEWithHmacSHA512AndAES_256, could not be evaluated due to insufficient information.
+			at statement: r0 = getInstance(r6)
+			at line: 24
+
+
+Findings in class example.PredicateMissingExample
+
+	in Method: <example.PredicateMissingExample: void main(java.lang.String[])>
+		ConstraintError violating CrySL rule for javax.crypto.KeyGenerator
+			First parameter (with value 46) should be any of {128, 192, 256}
+			at statement: r0.init(varReplacer9)
+			at line: 21
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.SecretKey
+			Return value was not properly generated as generatedKey
+			at statement: r1 = r0.generateKey()
+			at line: 22
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher
+			First parameter (with value "AES/CBC/PKCS7Padding") should be any of {PKCS5Padding, ISO10126Padding}
+			at statement: r2 = getInstance(varReplacer11)
+			at line: 23
+
+		CallToError violating CrySL rule for javax.crypto.Cipher
+			Call to one of the methods {getIV()} on object of type javax.crypto.Cipher is missing
+			at statement: r2 = getInstance(varReplacer11)
+			at line: 23
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generatedPrivkey OR generatedPubkey OR generatedKey
+			at statement: r2.init(varReplacer8,r1)
+			at line: 26
+
+
+Findings in class example.ConstraintErrorExample
+
+	in Method: <example.ConstraintErrorExample: void main(java.lang.String[])>
+		ConstraintError violating CrySL rule for javax.crypto.Cipher
+			First parameter (with value "AES/ECB/PKCS5Padding") should be any of varReplacer0/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: r0 = getInstance(varReplacer0)
+			at line: 15
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher
+			Operation on object of type javax.crypto.Cipher not completed. Expected call to one of the methods {init(int, java.security.Key), init(int, java.security.Key, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom), init(int, java.security.Key, java.security.spec.AlgorithmParameterSpec), init(int, java.security.Key, java.security.AlgorithmParameters, java.security.SecureRandom), init(int, java.security.cert.Certificate), init(int, java.security.Key, java.security.SecureRandom), init(int, java.security.Key, java.security.AlgorithmParameters), init(int, java.security.cert.Certificate, java.security.SecureRandom)}
+			at statement: r0 = getInstance(varReplacer0)
+			at line: 15
+
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 51
+	Number of Objects analyzed: 24
+	ImpreciseValueExtractionError: 1
+	RequiredPredicateError: 9
+	TypestateError: 1
+	ConstraintError: 5
+	IncompleteOperationError: 2
+	CallToError: 1
+
+	Total Analysis Time: 1.132 s
+	Call Graph Construction Time: 488.8 ms
+	Typestate Analysis Time: 447.2 ms
+	Reachable Methods: 22
+	Edges in Call Graph: 27
+	Entry Points: 19

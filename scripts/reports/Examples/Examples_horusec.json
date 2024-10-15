@@ -1,0 +1,13 @@
+{
+  "version": "v2.8.0",
+  "id": "becf65cb-d42d-4491-818f-38595c722e36",
+  "repositoryID": "00000000-0000-0000-0000-000000000000",
+  "repositoryName": "",
+  "workspaceID": "00000000-0000-0000-0000-000000000000",
+  "workspaceName": "",
+  "status": "success",
+  "errors": "",
+  "createdAt": "2024-10-11T16:40:27.538262888-03:00",
+  "finishedAt": "2024-10-11T16:40:27.557763358-03:00",
+  "analysisVulnerabilities": null
+}

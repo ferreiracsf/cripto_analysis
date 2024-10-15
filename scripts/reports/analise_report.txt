@@ -1,0 +1,290 @@
+Saída de cogniCryptScript.py:
+
+[1;32mUsing java version 11.0.24-amzn in this shell.[0m
+Processado: code-with-quarkus.jar
+Processado: teste.jar
+Processado: teste-1.jar
+Processado: Examples.jar
+
+Tempo de execução de cogniCryptScript.py: 35.36 segundos
+Consumo de memória de cogniCryptScript.py: 0.02 MB (atual), 0.06 MB (pico)
+----------------------------------------
+Saída de cryptoGuardScript.py:
+Erro ao executar o comando para code-with-quarkus.jar:
+openjdk version "1.8.0_422"
+OpenJDK Runtime Environment Corretto-8.422.05.1 (build 1.8.0_422-b05)
+OpenJDK 64-Bit Server VM Corretto-8.422.05.1 (build 25.422-b05, mixed mode)
+FATAL | 2024-10-11 16:40:00.255 | analyzer.BaseAnalyzerRouting (BaseAnalyzerRouting.java:433) | Error loading class org.acme.GreetingResource
+==================================
+Error ID: 121
+Error Type: Error loading class org.acme.GreetingResource
+Error Message: 
+[Error loading class org.acme.GreetingResource]
+==================================
+
+
+
+Saída do comando para teste.jar:
+
+[1;32mUsing java version 8.0.422-amzn in this shell.[0m
+ INFO | 2024-10-11 16:40:02.053 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2024-10-11 16:40:02.212 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Default
+ INFO | 2024-10-11 16:40:02.218 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2024-10-11 16:40:02.242 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2024-10-11 16:40:02.252 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2024-10-11 16:40:02.267 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2024-10-11 16:40:02.280 | engine.JarEntry (JarEntry.java:25) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2024-10-11 16:40:03.037 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenCryptoFinder
+ INFO | 2024-10-11 16:40:03.058 | engine.JarEntry (JarEntry.java:25) | Checking the rule: UntrustedPrngFinder
+ INFO | 2024-10-11 16:40:03.061 | engine.JarEntry (JarEntry.java:25) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2024-10-11 16:40:03.073 | engine.JarEntry (JarEntry.java:25) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2024-10-11 16:40:03.076 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HostNameVerifierFinder
+ INFO | 2024-10-11 16:40:03.079 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenHashFinder
+ INFO | 2024-10-11 16:40:03.096 | engine.JarEntry (JarEntry.java:25) | Checking the rule: ConstantKeyFinder
+ INFO | 2024-10-11 16:40:03.119 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableIVFinder
+ INFO | 2024-10-11 16:40:03.123 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBESaltFinder
+ INFO | 2024-10-11 16:40:03.164 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBEInterationCountFinder
+ INFO | 2024-10-11 16:40:03.187 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableSeedFinder
+ INFO | 2024-10-11 16:40:03.202 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2024-10-11 16:40:03.220 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HttpUrlFinder
+ INFO | 2024-10-11 16:40:03.232 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2024-10-11 16:40:03.240 | block.Default (Default.java:68) | Marshalling the Report from the Env. Info.
+ INFO | 2024-10-11 16:40:03.349 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_teste_ef1d0d8f-db2e-4484-bba1-d78fca0e359d_.json
+/home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_teste_ef1d0d8f-db2e-4484-bba1-d78fca0e359d_.json
+
+Versão do Java:
+openjdk version "1.8.0_422"
+OpenJDK Runtime Environment Corretto-8.422.05.1 (build 1.8.0_422-b05)
+OpenJDK 64-Bit Server VM Corretto-8.422.05.1 (build 25.422-b05, mixed mode)
+
+Arquivo _CryptoGuard-04.05.03_teste_ef1d0d8f-db2e-4484-bba1-d78fca0e359d_.json movido para ./reports/teste
+Saída do comando para teste-1.jar:
+
+[1;32mUsing java version 8.0.422-amzn in this shell.[0m
+ INFO | 2024-10-11 16:40:05.066 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2024-10-11 16:40:05.214 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Default
+ INFO | 2024-10-11 16:40:05.238 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2024-10-11 16:40:05.279 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2024-10-11 16:40:05.290 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2024-10-11 16:40:05.304 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2024-10-11 16:40:05.318 | engine.JarEntry (JarEntry.java:25) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2024-10-11 16:40:06.075 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenCryptoFinder
+ INFO | 2024-10-11 16:40:06.096 | engine.JarEntry (JarEntry.java:25) | Checking the rule: UntrustedPrngFinder
+ INFO | 2024-10-11 16:40:06.101 | engine.JarEntry (JarEntry.java:25) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2024-10-11 16:40:06.105 | engine.JarEntry (JarEntry.java:25) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2024-10-11 16:40:06.119 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HostNameVerifierFinder
+ INFO | 2024-10-11 16:40:06.122 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenHashFinder
+ INFO | 2024-10-11 16:40:06.128 | engine.JarEntry (JarEntry.java:25) | Checking the rule: ConstantKeyFinder
+ INFO | 2024-10-11 16:40:06.154 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableIVFinder
+ INFO | 2024-10-11 16:40:06.170 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBESaltFinder
+ INFO | 2024-10-11 16:40:06.204 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBEInterationCountFinder
+ INFO | 2024-10-11 16:40:06.225 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableSeedFinder
+ INFO | 2024-10-11 16:40:06.230 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2024-10-11 16:40:06.247 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HttpUrlFinder
+ INFO | 2024-10-11 16:40:06.278 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2024-10-11 16:40:06.283 | block.Default (Default.java:68) | Marshalling the Report from the Env. Info.
+ INFO | 2024-10-11 16:40:06.390 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_teste-1_13693684-a1bd-4ab0-899c-026ca0e88e89_.json
+/home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_teste-1_13693684-a1bd-4ab0-899c-026ca0e88e89_.json
+
+Versão do Java:
+openjdk version "1.8.0_422"
+OpenJDK Runtime Environment Corretto-8.422.05.1 (build 1.8.0_422-b05)
+OpenJDK 64-Bit Server VM Corretto-8.422.05.1 (build 25.422-b05, mixed mode)
+
+Arquivo _CryptoGuard-04.05.03_teste-1_13693684-a1bd-4ab0-899c-026ca0e88e89_.json movido para ./reports/teste-1
+Saída do comando para Examples.jar:
+
+[1;32mUsing java version 8.0.422-amzn in this shell.[0m
+ INFO | 2024-10-11 16:40:08.165 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2024-10-11 16:40:08.334 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Default
+ INFO | 2024-10-11 16:40:08.357 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2024-10-11 16:40:08.394 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2024-10-11 16:40:08.405 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2024-10-11 16:40:08.429 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2024-10-11 16:40:08.446 | engine.JarEntry (JarEntry.java:25) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2024-10-11 16:40:09.905 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenCryptoFinder
+ INFO | 2024-10-11 16:40:10.221 | engine.JarEntry (JarEntry.java:25) | Checking the rule: UntrustedPrngFinder
+ INFO | 2024-10-11 16:40:10.234 | engine.JarEntry (JarEntry.java:25) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2024-10-11 16:40:10.248 | engine.JarEntry (JarEntry.java:25) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2024-10-11 16:40:10.257 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HostNameVerifierFinder
+ INFO | 2024-10-11 16:40:10.268 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenHashFinder
+ INFO | 2024-10-11 16:40:10.278 | engine.JarEntry (JarEntry.java:25) | Checking the rule: ConstantKeyFinder
+ INFO | 2024-10-11 16:40:10.298 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableIVFinder
+ INFO | 2024-10-11 16:40:10.328 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBESaltFinder
+ INFO | 2024-10-11 16:40:10.341 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBEInterationCountFinder
+ INFO | 2024-10-11 16:40:10.378 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableSeedFinder
+ INFO | 2024-10-11 16:40:10.382 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2024-10-11 16:40:10.396 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HttpUrlFinder
+ INFO | 2024-10-11 16:40:10.409 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2024-10-11 16:40:10.420 | block.Default (Default.java:68) | Marshalling the Report from the Env. Info.
+ INFO | 2024-10-11 16:40:10.512 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_Examples_2a549f30-980a-4999-9f58-ceea5aec98f1_.json
+/home/vboxuser/Documents/cripto_analysis/scripts/_CryptoGuard-04.05.03_Examples_2a549f30-980a-4999-9f58-ceea5aec98f1_.json
+
+Versão do Java:
+openjdk version "1.8.0_422"
+OpenJDK Runtime Environment Corretto-8.422.05.1 (build 1.8.0_422-b05)
+OpenJDK 64-Bit Server VM Corretto-8.422.05.1 (build 25.422-b05, mixed mode)
+
+Arquivo _CryptoGuard-04.05.03_Examples_2a549f30-980a-4999-9f58-ceea5aec98f1_.json movido para ./reports/Examples
+
+Tempo de execução de cryptoGuardScript.py: 12.88 segundos
+Consumo de memória de cryptoGuardScript.py: 0.01 MB (atual), 0.06 MB (pico)
+----------------------------------------
+Saída de findSecBugsScript.py:
+
+[1;32mUsing java version 17.0.12-amzn in this shell.[0m
+
+Scanning archives (0 / 1)
+Scanning archives (1 / 1)
+
+2 analysis passes to perform
+
+Pass 1: Analyzing classes (0 / 12) - 00% complete
+Pass 1: Analyzing classes (1 / 12) - 08% complete
+Pass 1: Analyzing classes (2 / 12) - 16% complete
+Pass 1: Analyzing classes (3 / 12) - 25% complete
+Pass 1: Analyzing classes (4 / 12) - 33% complete
+Pass 1: Analyzing classes (5 / 12) - 41% complete
+Pass 1: Analyzing classes (6 / 12) - 50% complete
+Pass 1: Analyzing classes (7 / 12) - 58% complete
+Pass 1: Analyzing classes (8 / 12) - 66% complete
+Pass 1: Analyzing classes (9 / 12) - 75% complete
+Pass 1: Analyzing classes (10 / 12) - 83% complete
+Pass 1: Analyzing classes (11 / 12) - 91% complete
+Pass 1: Analyzing classes (12 / 12) - 100% complete
+
+Pass 2: Analyzing classes (0 / 1) - 00% complete
+Pass 2: Analyzing classes (1 / 1) - 100% complete
+Done with analysis
+
+Scanning archives (0 / 1)
+Scanning archives (1 / 1)
+
+2 analysis passes to perform
+
+Pass 1: Analyzing classes (0 / 35) - 00% complete
+Pass 1: Analyzing classes (1 / 35) - 02% complete
+Pass 1: Analyzing classes (2 / 35) - 05% complete
+Pass 1: Analyzing classes (3 / 35) - 08% complete
+Pass 1: Analyzing classes (4 / 35) - 11% complete
+Pass 1: Analyzing classes (5 / 35) - 14% complete
+Pass 1: Analyzing classes (6 / 35) - 17% complete
+Pass 1: Analyzing classes (7 / 35) - 20% complete
+Pass 1: Analyzing classes (8 / 35) - 22% complete
+Pass 1: Analyzing classes (9 / 35) - 25% complete
+Pass 1: Analyzing classes (10 / 35) - 28% complete
+Pass 1: Analyzing classes (11 / 35) - 31% complete
+Pass 1: Analyzing classes (12 / 35) - 34% complete
+Pass 1: Analyzing classes (13 / 35) - 37% complete
+Pass 1: Analyzing classes (14 / 35) - 40% complete
+Pass 1: Analyzing classes (15 / 35) - 42% complete
+Pass 1: Analyzing classes (16 / 35) - 45% complete
+Pass 1: Analyzing classes (17 / 35) - 48% complete
+Pass 1: Analyzing classes (18 / 35) - 51% complete
+Pass 1: Analyzing classes (19 / 35) - 54% complete
+Pass 1: Analyzing classes (20 / 35) - 57% complete
+Pass 1: Analyzing classes (21 / 35) - 60% complete
+Pass 1: Analyzing classes (22 / 35) - 62% complete
+Pass 1: Analyzing classes (23 / 35) - 65% complete
+Pass 1: Analyzing classes (24 / 35) - 68% complete
+Pass 1: Analyzing classes (25 / 35) - 71% complete
+Pass 1: Analyzing classes (26 / 35) - 74% complete
+Pass 1: Analyzing classes (27 / 35) - 77% complete
+Pass 1: Analyzing classes (28 / 35) - 80% complete
+Pass 1: Analyzing classes (29 / 35) - 82% complete
+Pass 1: Analyzing classes (30 / 35) - 85% complete
+Pass 1: Analyzing classes (31 / 35) - 88% complete
+Pass 1: Analyzing classes (32 / 35) - 91% complete
+Pass 1: Analyzing classes (33 / 35) - 94% complete
+Pass 1: Analyzing classes (34 / 35) - 97% complete
+Pass 1: Analyzing classes (35 / 35) - 100% complete
+
+Pass 2: Analyzing classes (0 / 5) - 00% complete
+Pass 2: Analyzing classes (1 / 5) - 20% complete
+Pass 2: Analyzing classes (2 / 5) - 40% complete
+Pass 2: Analyzing classes (3 / 5) - 60% complete
+Pass 2: Analyzing classes (4 / 5) - 80% complete
+Pass 2: Analyzing classes (5 / 5) - 100% complete
+Done with analysis
+
+Scanning archives (0 / 1)
+Scanning archives (1 / 1)
+Scanning archives (0 / 1)
+Scanning archives (1 / 1)Erro ao executar o comando:
+None
+
+Tempo de execução de findSecBugsScript.py: 16.87 segundos
+Consumo de memória de findSecBugsScript.py: 0.01 MB (atual), 0.06 MB (pico)
+----------------------------------------
+Saída de extrairArquivosJarScript.py:
+Todos os arquivos .jar foram extraídos com sucesso.
+
+Tempo de execução de extrairArquivosJarScript.py: 0.05 segundos
+Consumo de memória de extrairArquivosJarScript.py: 0.00 MB (atual), 0.06 MB (pico)
+----------------------------------------
+Saída de horusecScript.py:
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} When starting the analysis WE SKIP A TOTAL OF 1 FILES that are not considered to be analyzed. To see more details use flag --log-level=debug"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="Horusec will return a timeout after 600 seconds. This time can be customized in the cli settings."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} PLEASE DON'T REMOVE \".horusec\" FOLDER BEFORE THE ANALYSIS FINISH! Don’t worry, we’ll remove it after the analysis ends automatically! Project sent to folder in location: [/home/vboxuser/Documents/cripto_analysis/scripts/project/Examples/.horusec/becf65cb-d42d-4491-818f-38595c722e36]"
+
+
+[K
+⣾ Scanning code ...
+[Ktime="2024-10-11T16:40:27-03:00" level=info msg="{HORUSEC_CLI} Writing output JSON to file in the path: /home/vboxuser/Documents/cripto_analysis/scripts/reports/Examples/Examples_horusec.json"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} No authorization token was found, your code it is not going to be sent to horusec. Please enter a token with the -a flag to configure and save your analysis"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="YOUR ANALYSIS HAD FINISHED WITHOUT ANY VULNERABILITY!"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} Horusec not show info vulnerabilities in this analysis, to see info vulnerabilities add option \"--information-severity=true\". For more details use (horusec start --help) command."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="Horusec will return a timeout after 600 seconds. This time can be customized in the cli settings."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} PLEASE DON'T REMOVE \".horusec\" FOLDER BEFORE THE ANALYSIS FINISH! Don’t worry, we’ll remove it after the analysis ends automatically! Project sent to folder in location: [/home/vboxuser/Documents/cripto_analysis/scripts/project/teste-1/.horusec/d0269869-5326-4958-94e1-95c185f9f7ca]"
+
+
+[K
+⣾ Scanning code ...
+[Ktime="2024-10-11T16:40:27-03:00" level=info msg="{HORUSEC_CLI} Writing output JSON to file in the path: /home/vboxuser/Documents/cripto_analysis/scripts/reports/teste-1/teste-1_horusec.json"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} No authorization token was found, your code it is not going to be sent to horusec. Please enter a token with the -a flag to configure and save your analysis"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="YOUR ANALYSIS HAD FINISHED WITHOUT ANY VULNERABILITY!"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} Horusec not show info vulnerabilities in this analysis, to see info vulnerabilities add option \"--information-severity=true\". For more details use (horusec start --help) command."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="Horusec will return a timeout after 600 seconds. This time can be customized in the cli settings."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} PLEASE DON'T REMOVE \".horusec\" FOLDER BEFORE THE ANALYSIS FINISH! Don’t worry, we’ll remove it after the analysis ends automatically! Project sent to folder in location: [/home/vboxuser/Documents/cripto_analysis/scripts/project/code-with-quarkus/.horusec/a89b22fe-38b5-461f-b83e-b519be4e5049]"
+
+
+[K
+⣾ Scanning code ...
+[Ktime="2024-10-11T16:40:27-03:00" level=info msg="{HORUSEC_CLI} Writing output JSON to file in the path: /home/vboxuser/Documents/cripto_analysis/scripts/reports/code-with-quarkus/code-with-quarkus_horusec.json"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} No authorization token was found, your code it is not going to be sent to horusec. Please enter a token with the -a flag to configure and save your analysis"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="YOUR ANALYSIS HAD FINISHED WITHOUT ANY VULNERABILITY!"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} Horusec not show info vulnerabilities in this analysis, to see info vulnerabilities add option \"--information-severity=true\". For more details use (horusec start --help) command."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="Horusec will return a timeout after 600 seconds. This time can be customized in the cli settings."
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} PLEASE DON'T REMOVE \".horusec\" FOLDER BEFORE THE ANALYSIS FINISH! Don’t worry, we’ll remove it after the analysis ends automatically! Project sent to folder in location: [/home/vboxuser/Documents/cripto_analysis/scripts/project/teste/.horusec/d1a6f29f-f71d-45ac-9b23-2e6978be3f5b]"
+
+
+[K
+⣾ Scanning code ...
+[Ktime="2024-10-11T16:40:27-03:00" level=info msg="{HORUSEC_CLI} Writing output JSON to file in the path: /home/vboxuser/Documents/cripto_analysis/scripts/reports/teste/teste_horusec.json"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} No authorization token was found, your code it is not going to be sent to horusec. Please enter a token with the -a flag to configure and save your analysis"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="YOUR ANALYSIS HAD FINISHED WITHOUT ANY VULNERABILITY!"
+
+time="2024-10-11T16:40:27-03:00" level=warning msg="{HORUSEC_CLI} Horusec not show info vulnerabilities in this analysis, to see info vulnerabilities add option \"--information-severity=true\". For more details use (horusec start --help) command."
+
+Tempo de execução de horusecScript.py: 0.30 segundos
+Consumo de memória de horusecScript.py: 0.01 MB (atual), 0.06 MB (pico)
+----------------------------------------

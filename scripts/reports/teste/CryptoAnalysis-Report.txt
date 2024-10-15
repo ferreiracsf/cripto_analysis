@@ -1,0 +1,67 @@
+Ruleset:
+	java.security.Key
+	javax.crypto.SecretKeyFactory
+	javax.crypto.spec.PBEKeySpec
+	java.security.spec.ECParameterSpec
+	java.security.cert.CertificateFactory
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.spec.RSAKeyGenParameterSpec
+	java.security.SecureRandom
+	javax.crypto.spec.PBEParameterSpec
+	javax.net.ssl.TrustManagerFactory
+	javax.crypto.SecretKey
+	java.security.spec.DSAParameterSpec
+	javax.net.ssl.KeyStoreBuilderParameters
+	java.security.DigestOutputStream
+	javax.net.ssl.SSLParameters
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.crypto.spec.DHParameterSpec
+	javax.crypto.spec.GCMParameterSpec
+	javax.crypto.Cipher
+	java.security.PublicKey
+	java.security.KeyPairGenerator
+	java.security.Signature
+	java.security.KeyFactory
+	javax.net.ssl.SSLContext
+	java.security.cert.TrustAnchor
+	javax.servlet.http.Cookie
+	java.security.cert.PKIXParameters
+	java.security.AlgorithmParameters
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.spec.SecretKeySpec
+	java.security.spec.X509EncodedKeySpec
+	java.net.PasswordAuthentication
+	javax.net.ssl.KeyManagerFactory
+	javax.crypto.CipherOutputStream
+	javax.crypto.spec.IvParameterSpec
+	javax.net.ssl.SSLEngine
+	java.security.KeyStore
+	java.security.cert.PKIXBuilderParameters
+	java.security.DigestInputStream
+	java.security.PrivateKey
+	javax.crypto.KeyAgreement
+	java.security.spec.MGF1ParameterSpec
+	javax.crypto.spec.OAEPParameterSpec
+	java.security.spec.ECGenParameterSpec
+	javax.crypto.Mac
+	javax.crypto.spec.DHGenParameterSpec
+	java.security.KeyPair
+	javax.crypto.KeyGenerator
+	java.security.AlgorithmParameterGenerator
+	javax.crypto.CipherInputStream
+	java.security.MessageDigest
+
+Analyzed Objects:
+
+======================= CryptoAnalysis Summary ==========================
+	Number of CrySL rules: 51
+	Number of Objects analyzed: 0
+
+	No violations of any of the rules found.
+
+	Total Analysis Time: 151.2 ms
+	Call Graph Construction Time: 117.6 ms
+	Typestate Analysis Time: 864.6 μs
+	Reachable Methods: 0
+	Edges in Call Graph: 0
+	Entry Points: 0
